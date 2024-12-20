@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jayesh Thakre</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #7594ca;
+        }
+        header {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(135deg, #4f85db, #88d3ce);
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+        }
+        nav {
+            background: #333;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #0b0717;
+        }
+        #skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        #skills li {
+            background: #ceebf0;
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        #skills li:hover {
+            transform: scale(1.1);
+        }
+        .card {
+            background: rgb(201, 211, 220);
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card h3 {
+            color: #6e45e2;
+        }
+        footer {
+            background: #333;
+            color: rgba(6, 173, 185, 0.981);
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+        footer p {
+            margin: 0;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background: #511edd;
+            color: rgb(74, 159, 172);
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #88d3ce;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            section {
+                padding: 30px 20px;
+            }
+            section h2 {
+                font-size: 1.8rem;
+            }
+            .card {
+                max-width: 90%;
+                margin: 10px auto;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            header p {
+                font-size: 1rem;
+            }
+            section h2 {
+                font-size: 1.5rem;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 8px 0;
+                font-size: 1rem;
+            }
+            .card {
+                max-width: 100%;
+                margin: 10px 0;
+                padding: 15px;
+            }
+            footer p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jayesh Thakre</h1>
+        <p>Web Developer | Programmer | Designer</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Welcome! I am a passionate web developer specializing in creating modern, responsive websites. I love solving problems and bringing ideas to life through code.</p>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul id="skills-list"></ul>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>A personal website to showcase my skills and projects. Built using HTML, CSS, and JavaScript.</p>
+            <button onclick="viewProject()">View Project</button>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me for collaborations or just a friendly chat!</p>
+        <p>Email: <a href="jayeshsthakate2003@gmail.com" style="color: #060e0f;">jayeshsthakare2003@gmail.com</a></p>
+    </section>
+    <footer>
+        <p>© 2024 Your Name. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
